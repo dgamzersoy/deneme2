@@ -1,102 +1,87 @@
 
 import './App.css';
-import {FaTwitter} from "react-icons/fa";
+import {FaShoppingCart, FaTwitter} from "react-icons/fa";
 import {FaEnvelopeOpenText} from "react-icons/fa";
 import {FaAsterisk} from "react-icons/fa";
 import {FaCloudMoonRain} from "react-icons/fa";
 import {FaSearch} from "react-icons/fa";
+import  {FaHome} from "react-icons/fa";
+import {FaHeart} from "react-icons/fa";
+import {FaCartPlus} from "react-icons/fa";
+import {FaUserClock} from "react-icons/fa";
 function App() {
   return (
     <div>
-      <div class="header">
-      <ul className="menu">
-        <li><span>Anasayfa</span></li>
-        <li><span>Hakkında</span></li>
-        <li>
-            <span>Dersler</span>
-            <ul>
-                <li><span>php</span></li>
-                <li><span>css</span></li>
-                <li><span>html</span></li>
-                <li><span>javascript</span></li>
-                <li><span>c#</span></li>
-                <li><span>c++</span></li>
-            </ul>
-        </li>
-        <li><span>Referanslar</span></li>
-        <li><span>Ödüller</span></li>
-        <li><span>İletişim</span>
-        <ul>
-                <li><span>Adres</span></li>
-                <li><span>Telefon</span></li>
-                <li><span>Email</span></li>
-                
-            </ul></li>
+     <div class="navi">
+       <span>400 TL Üzeri Kargo Bedava</span>
        
-        <li><span>Konuşulanlar</span></li>
-        <li><span>Hava Durumu</span></li>
-    </ul>
+     </div>
+
+     <div class="navbar">
+       <ul className="menu">
+       <li><FaSearch/>Arama</li>
+       <li><FaHome/>Mağazalar</li>
+       <li><FaHeart/>Favorilerim</li> 
+       <li><FaCartPlus/>Sepet</li>
+       <li><FaUserClock/>Giriş</li>   
+       </ul>
+       </div>
+       <div class="navalt">
+         <ul className="menu2">
+         <li><span>Yeni Gelenler</span></li>
+         <li><span> Yeni Sezon </span></li>
+         <li><span>Koleksiyon</span>
+          <ul className="Koleksiyon">
+            <li><span>Bluz&Gömlek</span></li>
+            <li><span>Tunik</span></li>
+            <li><span>Tişört</span></li>
+            <li><span>Elbise&Tulum</span></li>
+            <li><span>Sweatshirt</span></li>
+            <li><span>Pantolon</span></li>
+            <li><span>Jean</span></li>
+            <li><span>Etek&Şort</span></li>
+            <li><span>Ceket</span></li>
+            <li><span>Mont&Kaban</span></li>
+            <li><span>Trençkot</span></li>
+            <li><span>Takım</span></li>
+            <li><span>Kap</span></li>
+            <li><span>Abiye</span></li>
+          </ul>
+         </li>
         
-      </div>
-      <div class="path">
-      <p><i>Açıklamalar Gelecek</i></p>
-      </div>
-    
-      <div class="docktop">
-     <form><div id ="box"> 
-       <input type ="text" id="search" placeholder="Arama" > 
-         </input>
-       </div></form>
-      </div>
+         <li>Markalar
+          <ul className="markalar">
+            <li><span>Galaxi</span></li>
+            <li><span>SCL</span></li>
+          </ul>
+         </li>
+         
+         <li><span>Ayakkabı&Aksesuar</span>
+            <ul className="genis">
+                <div>
+                  <ul>
+                      <li><span>Düz Ayakkabı</span></li>
+                      <li><span>Bot&Çizme</span></li> 
+                      <li><span>Sandalet&Terlik</span></li>
+                      <li><span>Topuklu Ayakkabı</span></li>
+                      <li><span>Sapor Ayakkabı</span></li>
+                    </ul>
+                  </div>
+                  <div>
 
-      <div class="kutu1">
-        <div class="dockleft">
-        <ul className="menu2">
-        <li><span>Gündem</span></li>
-        <li><span>Magazin</span></li>
-        <li>
-            <span>Spor</span>
-            <ul>
-                <li><span>futbol</span></li>
-                <li><span>basketbol</span></li>
-                <li><span>voleybol</span></li>
-                <li><span>tenis</span></li>
-               
+                  <ul>
+                      <li><span>Çanta</span></li>
+                      <li><span>Telefon Çantası</span></li>
+                      <li><span>Kemer</span></li>
+                      <li><span>Maske</span></li>
+                    </ul>
+                    </div>
             </ul>
-            </li>
-            <li><span>Burçlar</span></li>
-   
-        </ul>
-        </div>
-        <div class="kutu2">
-        <div class="error">
-        <h1 className="deneme">error</h1>
-        </div>
-        <div class="content">
-        <ul className ="yuvarlak">
-          <li><span><FaTwitter /> </span>
-            <ul>
-              <li><span><FaEnvelopeOpenText/></span></li>
-               <li><span><FaAsterisk/></span></li>
-                <li><span><FaCloudMoonRain></FaCloudMoonRain></span></li>
-          </ul>
-          
-          </li>
-          </ul>
-
-        </div>
-        </div>
-        <div class="dockright">
-        <h1>dockright</h1>
-        </div>
-      </div>
-
-      <div class="dockbottom">
-      <h1>dockbottom</h1>
-      </div>
-      <div class="footer">
-      <p>Bize Ulaşın</p>
-      </div>
+           </li>
+        
+         <li><span>İndirim</span></li>
+ </ul>       
+</div>
   </div>
   );
 }

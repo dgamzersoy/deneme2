@@ -1,316 +1,189 @@
-body >div{
-    display: flex;
-    justify-content: center;
-    text-align: center;
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
 }
 
-.menu > li{
-  cursor:pointer;
-  padding:15px 15px;
-}
-
-.header .menu > li { 
-  display: inline-block;
-  position: relative;
-}
-
-.menu > li:hover {
-  display:inline-block;
-  background-color: rgb(192, 183, 183);
-}
-
-
-.header ul ul {
-  display: none;
-  background-color: rgba(192, 183, 183, .7);
-  position: absolute;
-  left: 0;
-  top: 50px;
-  width:70px;
-  padding:0;
-  text-align: left;
-  width: 200px;
-}
-
-.header ul ul ul{
-  display: none;
-  background-color: rgba(192, 183, 183, .7);
-  position: absolute;
-  left: 0;
-  top: 50px;
-  width:70px;
-  padding:0;
-  text-align: left;
-  width: 200px;
-}
-
-
-.header li:hover ul ul{
-  display:block;
-}
-.header li:hover ul {
-  display: block;
-}
-
-.menu:nth-child(1):active{
-  background-color:rgb(211, 113, 113);
-}
-
-
-.header > ul > li{
-  display: inline-block;
-}
-
-
-.header ul ul >li {
-  text-align: left;
-}
-
-li > ul > li {
-  display: block;
-  padding: 12px 2px 2px 5px;
-  margin: 5px;
-}
-
-li > ul > li:hover {
-  background-color:rgb(126, 117, 117);
-}
-
-.path p{
-  line-height: 1.7em;
-  font-family:Georgia, 'Times New Roman', Times, serif;
-}
-
-body > div > div {
-  width: 90%;
-  height: 70vh;
-} 
-
-.dockleft {
-  width: 25%;
-  height:400px;
-}
-
-.kutu1{
-  display: flex;
-}
-
-.header{
+.navi {
   width:auto;
-  height:100px;
-  background-color: #dadae4;
-  border: 2px solid rgb(208, 208, 221);
+  height:40px;
+  background-color: black;
+  line-height:2.5 ;
+  text-align: center;
+  color:rgb(250, 247, 243);
+  font-weight: 600;
+}
+
+.navbar{
+
+  width:auto;
+  height:30px;
  
-}
-
-.path{
-  width:auto;
-  height:70px;
-  background-color: violet;
-  border: 2px solid rgb(224, 19, 173);
-}
-
-
-.docktop{
-  width:auto;
-  height:70px;
-  background-color:rgb(228, 174, 93);
-  border: 2px solid rgb(224, 101, 19);
-}
-
-.dockleft{
-  width:25%;
-  height: 400px;
-  background-color: violet;
-  border: 2px solid rgb(224, 19, 53);
-}
-
-.dockright{
-  width:25%;
-  height:400px;
-  background-color: rgb(87, 211, 118);
-  border: 2px solid rgb(10, 107, 51);
-}
-
-.error{
-  width:600px;
-  height:100px;
-  background-color: rgb(161, 169, 212);
-  border: 2px solid rgb(31, 7, 7);
-}
-
-.content{
-  height:296px;
-  background-color: blueviolet;
-  border: 2px solid rgb(224, 101, 19);
-}
-
-.dockbottom{
-  width:auto;
-  height:70px;
-  background-color: rgb(130, 238, 157);
-  border: 2px solid rgb(54, 159, 185);
-}
-
-.footer{
-  width:auto;
-  height:70px;
-  background-color: rgb(231, 165, 89);
-  border: 2px solid rgb(201, 80, 43);
-}
-
-.footer>p{
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: medium;
-}
-
-.menu2 li ul {
+ 
   
+}
+
+.menu {
+  list-style: none; 
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 90px;
+  border-right: 1px solid rgb(119, 113, 113);
+
  
-  display: none;
-  top:5px;
-  right:20px;
- 
+}
+
+.menu>li{
+  padding-inline: 5px;
 
 }
 
-.menu2 li{
-  list-style:none;
-  position: relative;
-  text-align:left;
-  margin:5px;
-  padding:5px;
-  border-right:1px solid rgba(0,0,0,.1);
+
+
+.navalt{
+
+  width:auto;
+  height:30px;
+  border-bottom: 1px solid rgb(194, 186, 186);
+ 
 }
 
-.menu2 li ul>li{
+.menu2 {
+ text-align: center;
+  display: block;
+  list-style: none;
+ 
+  
+}
 
+.navalt ul li{
 
- font-family: sans-serif;
- margin:2px;
- padding:3px;
+  border-inline-color:blue;
+  display:inline-block;
+  font-weight: 600;
+  right:50px;
+  line-height: 1.5em;
+  font-size:20px;
+  padding-inline:17px ;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color:black;
+  
+}
+
+.menu2 li:hover {
+  border-bottom:1px solid grey;
+  cursor:pointer;
+  
+}
+
+.menu2 > li > ul {
+position: absolute;
+display:none;
  
 }
 
 .menu2 li:hover ul{
+display:block;
+}
 
+.navalt ul ul>li{
+  position: relative;
   display:block;
+  font-size: small;
+  padding: 2px;
+  margin: 10px;
+  width: 20px;
+  padding-left: 20px;
+  
   
 }
 
-
-
-.yuvarlak >li{
-  cursor:pointer;
-  list-style:none;
-  border:1px solid rgb(75, 70, 70);
-  background-color:rgb(101, 149, 221);
-  opacity: 1;
-  width:90px;
-  height:90px;
-  border-radius: 45px;
-  position:fixed;
-  bottom:0px;
-  right:0px;
-}
-.yuvarlak >li:before{
-  content:'';
-  border: 2px solid red;
-  border-radius: 45px;
-  position: absolute;
-  bottom:0px;
-  right:0px;
-}
-
-.yuvarlak >li:hover:before{
-  width: 180px;
-  height: 180px;
-}
-
-.yuvarlak li>ul{
-  opacity: 0.7;
-  display: none;
+.menu2 > ul {
+  width: 80px;
+  height: auto;
+  border: 1px solid gray;
 }
 
 
-.yuvarlak>li>span{
-  line-height: 5.5;
-  color: rgb(75, 71, 71);
-   
+.menu2 > ul {
+  width: 80px;
+  height: auto;
+  border: 1px solid gray;
 }
 
-
-.yuvarlak li:hover ul {
-  display: block;
+.kutu div {
+  
+  
+  width:150px;
+  
 }
 
+.kutu:nth-child(1){
+  height: 50%;
+  
+}
 
- .yuvarlak li ul li
-{
-  width: 50px;
-  height: 50px;
-  line-height: 50px;
-  display: inline-block;
-  border-radius: 50%;
-  position: absolute;
-  color:black; 
-  border: 1px solid #333;
+.kutu:nth-child(2){
+  height: 50%;
+  
+}
+
+.genis {
+  width: 300px;
+  border: 1px solid red;
   padding: 0;
-  background-color: rgb(95, 135, 196);
 }
-
-
-.yuvarlak li ul li:nth-of-type(1)
-{
- 
-  bottom: 120px;
-  right:30px;
-}
-
-
-.yuvarlak li ul li:nth-of-type(2)
-{
-  bottom: 80px;
-  right: 100px;
-}
-
-
-.yuvarlak li ul li:nth-of-type(3)
-{
-  right: 120px;
-  bottom: 5px;
-}
-
- 
-
-#box {
-  max-width: 800px;
-  position: relative;
+.genis div {
+  width: 50%;
   float: left;
-  top:14px;
-  left:7px;
+  text-align: left;
+  
 }
-
-#search {
-  width: 250px;
-  height: 30px;
- background-color: rgb(226, 125, 43);
- color:cornsilk;
- 
+.genis div ul {
+  padding: 5px;
 }
-
-
-.deneme::before {
-  content: '';
-  width: 30px;
-  height: 30px;
-  background-color: red;
-  display: inline-block;
-  position: absolute;
-  top: 10px;
-  left: 0;
-}
-
-.deneme::after {
-  content: '/'
+.genis div ul li {
+  right: 0;
+  width: 100%;
+  text-align: left;
+  padding: 2px 0;
+  margin: 5px 0;
 }
